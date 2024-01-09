@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            text-align: right;
+            text-align: right; /* Alinha todos os elementos à direita */
             margin: 0;
             padding: 0;
             background-image: url(https://img.freepik.com/fotos-gratis/vista-elevada-do-portatil-fones-de-ouvido-papeis-amassados-lapis-bloco-de-notas-em-branco-espiral-e-moldura-em-fundo-preto_23-2148080331.jpg?w=826&t=st=1704718864~exp=1704719464~hmac=d5082c320fbe045fe1b51d4bcaa88ed08256ac15744e19729eadf38b454952e2);
@@ -17,7 +17,7 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: flex-end;
+            align-items: flex-end; /* Alinha os itens no eixo transversal à direita */
             height: 100vh;
         }
 
@@ -28,13 +28,12 @@
         .button-container {
             display: flex;
             flex-direction: row;
-            justify-content: flex-end;
-            align-items: center;
+            justify-content: flex-end; /* Alinha os botões à direita */
+            align-items: flex-start;
             width: 100%;
-            margin-top: 10px;
         }
 
-        .button {
+        .button, .button-secondary, .whatsapp-button {
             display: inline-block;
             padding: 10px 20px;
             font-size: 16px;
@@ -43,11 +42,14 @@
             text-decoration: none;
             outline: none;
             color: #fff;
-            background-color: #007BFF;
             border: none;
             border-radius: 5px;
-            box-shadow: 0 4px #0056b3;
             margin: 10px;
+        }
+
+        .button {
+            background-color: #007BFF;
+            box-shadow: 0 4px #0056b3;
         }
 
         .button:hover {
@@ -64,19 +66,8 @@
         }
 
         .whatsapp-button {
-            display: inline-block;
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-            text-align: center;
-            text-decoration: none;
-            outline: none;
-            color: #fff;
             background-color: #25D366;
-            border: none;
-            border-radius: 5px;
             box-shadow: 0 4px #128C7E;
-            margin: 10px;
         }
 
         .whatsapp-button:hover {
@@ -85,7 +76,7 @@
 
         footer {
             text-align: center;
-            background-color: #333; /* Cor de fundo do rodapé */
+            background-color: #333;
             padding: 10px;
             position: fixed;
             bottom: 0;
@@ -99,15 +90,16 @@
     </style>
 </head>
 <body>
-    <h1>Alexandre Drummond Rizzato</h1>
-    <p>Bem-vindo ao maravilhoso mundo da web!!!</p>
-
     <div class="button-container">
         <a href="https://www.linkedin.com/in/alexandre-drummond-rizzato-524a3724?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B%2FGTl76I8QBO5jGS%2Fz8BaBg%3D%3D" class="button">Linkedin</a>
-        <a href="https://gist.github.com/Aledrizzato78" class="button button-secondary">Github</a>
+        <a href="https://github.com/Aledrizzato78" class="button button-secondary">Github</a>
+        <a href="https://wa.me/5511980506190" class="whatsapp-button">Fale comigo</a>
+        <a href="pagina2.html" class="button">Minha trajetória</a>
     </div>
 
-    <a href="https://wa.me/SEUNUMERO" class="whatsapp-button">WhatsApp</a>
+    <h1>Alexandre Drummond Rizzato</h1>
+    <p>Dev Java / Python / SQL / Spring Boot / Html</p>
+    <p>Bem-vindo ao maravilhoso mundo da web!!!</p>
 
     <footer>
         <p>Contato: <a href="mailto:aledrizzato@gmail.com">aledrizzato@gmail.com</a></p>
