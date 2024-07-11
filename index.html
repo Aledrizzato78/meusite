@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifólio Alexandre</title>
+    <title>Minha Página Inicial</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            text-align: right; /* Alinhar o texto à direita */
+            text-align: right;
             margin: 0;
             padding: 0;
             background-image: url(https://img.freepik.com/fotos-gratis/vista-elevada-do-portatil-fones-de-ouvido-papeis-amassados-lapis-bloco-de-notas-em-branco-espiral-e-moldura-em-fundo-preto_23-2148080331.jpg?w=826&t=st=1704718864~exp=1704719464~hmac=d5082c320fbe045fe1b51d4bcaa88ed08256ac15744e19729eadf38b454952e2);
@@ -17,7 +17,7 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: flex-end; /* Alinhar itens à direita */
+            align-items: flex-end;
             height: 100vh;
         }
 
@@ -28,26 +28,29 @@
         .button-container {
             display: flex;
             flex-direction: row;
-            justify-content: flex-end; /* Alinhar os botões à direita */
-            align-items: center;
+            justify-content: flex-end;
+            align-items: flex-start;
             width: 100%;
-            margin-top: 10px; /* Adicionar margem acima dos botões */
+            flex-wrap: wrap;
         }
 
-        .button {
+        .button, .button-secondary, .whatsapp-button {
             display: inline-block;
-            padding: 10px 20px;
-            font-size: 16px;
+            padding: 5px 10px;
+            font-size: 0.8rem;
             cursor: pointer;
             text-align: center;
             text-decoration: none;
             outline: none;
             color: #fff;
-            background-color: #007BFF;
             border: none;
             border-radius: 5px;
+            margin: 5px;
+        }
+
+        .button {
+            background-color: #007BFF;
             box-shadow: 0 4px #0056b3;
-            margin: 10px;
         }
 
         .button:hover {
@@ -62,15 +65,58 @@
         .button-secondary:hover {
             background-color: #495057;
         }
+
+        .whatsapp-button {
+            background-color: #25D366;
+            box-shadow: 0 4px #128C7E;
+        }
+
+        .whatsapp-button:hover {
+            background-color: #128C7E;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #333;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        @media (max-width: 600px) {
+            .button-container {
+                justify-content: flex-end;
+                flex-wrap: wrap;
+            }
+
+            .button, .button-secondary, .whatsapp-button {
+                font-size: 0.8rem;
+                padding: 5px 10px;
+                margin: 5px;
+            }
+        }
     </style>
 </head>
 <body>
-    <h1>Alexandre Drummond Rizzato</h1>
-    <p>Bem vindo ao maravilhoso mundo da web!!!</p>
-
     <div class="button-container">
         <a href="https://www.linkedin.com/in/alexandre-drummond-rizzato-524a3724?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B%2FGTl76I8QBO5jGS%2Fz8BaBg%3D%3D" class="button">Linkedin</a>
-        <a href="https://gist.github.com/Aledrizzato78" class="button button-secondary">Github</a>
+        <a href="https://github.com/Aledrizzato78" class="button button-secondary">Github</a>
+        <a href="https://wa.me/5511980506190" class="whatsapp-button">Fale comigo</a>
+        <a href="pagina2.html" class="button">Clique e descubra</a>
     </div>
+
+    <h1>Alexandre Drummond Rizzato</h1>
+    <p>Dev Java / Python / SQL / Spring Boot / Html</p>
+    <p>Bem-vindo ao maravilhoso mundo da web!!!</p>
+
+    <footer>
+        <p>Contato: <a href="mailto:aledrizzato@gmail.com">aledrizzato@gmail.com</a></p>
+    </footer>
 </body>
 </html>
