@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre - Alexandre Drummond Rizzato</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+        body {
+            font-family: 'Indie Flower', cursive;
+            text-align: left;
+            margin: 0;
+            padding: 20px;
+            background-image: url('imagens/papeldeparede.jpg'); /* Caminho atualizado */
+            background-size: cover;
+            background-position: center;
+            color: #333;
+        }
+
+        h1, h2, p {
+            margin: 10px 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sobre Mim</h1>
+        <p>Meu nome é Alexandre Drummond Rizzato, e sou Desenvolvedor de Software na TFP. Tenho uma paixão por criar soluções tecnológicas que não só atendem às necessidades dos usuários, mas que também são eficientes e inovadoras. Ao longo da minha carreira, especializei-me na criação de APIs RESTful, utilizando Java e Python.</p>
+        
+        <p>Trabalhar em equipe é algo que valorizo muito, pois acredito que a colaboração é essencial para o desenvolvimento de soluções de vanguarda. Utilizo ferramentas como Maven para gerenciamento de dependências e Postman para testes de API, garantindo a qualidade e confiabilidade das aplicações que desenvolvemos.</p>
+
+        <p>Estou sempre em busca de novas oportunidades que desafiem minhas habilidades e contribuam para o meu crescimento profissional e tecnológico. Meu foco é a evolução contínua, tanto pessoal quanto profissional.</p>
+        
+        <h2>Portfólio</h2>
+        <p>Aqui estão alguns dos projetos nos quais trabalhei:</p>
+        <ul>
+            <li><strong>Projeto A:</strong> Desenvolvimento de uma API RESTful para um sistema de gerenciamento de estoque, utilizando Java e Spring Boot.</li>
+            <li><strong>Projeto B:</strong> Criação de um sistema de automação de testes com Python e Selenium, melhorando a eficiência dos testes de regressão.</li>
+            <li><strong>Projeto C:</strong> Implementação de uma solução de integração contínua com Jenkins, facilitando a entrega contínua e o deploy automatizado de aplicações.</li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>Contato: <a href="mailto:aledrizzato@gmail.com">aledrizzato@gmail.com</a></p>
+    </footer>
+</body>
+</html>
